@@ -1,0 +1,77 @@
+/* Coaching page — Structured / Professional */
+.coaching-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+.coaching-card {
+  background: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  border: 1px solid var(--color-border);
+  transition: all var(--duration-fast) var(--ease-out);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.coaching-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.06);
+}
+
+.coaching-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-accent-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.coaching-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.coaching-card__desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+.coach-profile {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 24px;
+  background: var(--color-bg-card-dark);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-dark);
+}
+
+.coach-profile__avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--color-bg-dark-lighter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.coach-profile__info { flex: 1; }
+.coach-profile__name { font-family: var(--font-display); font-weight: 700; font-size: 1.125rem; text-transform: uppercase; color: var(--color-text-white); }
+.coach-profile__role { font-size: 0.8125rem; color: var(--color-text-muted-light); margin-top: 4px; }
+
+@media (max-width: 809px) {
+  .coaching-grid { grid-template-columns: 1fr; }
+}

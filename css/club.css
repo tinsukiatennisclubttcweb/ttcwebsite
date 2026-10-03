@@ -1,0 +1,23 @@
+/* Club page — Editorial / Storytelling */
+.club-story { max-width: 800px; }
+.club-story p { font-size: 1.125rem; line-height: 1.75; color: var(--color-text-muted); margin-bottom: 24px; }
+.club-story p:last-child { margin-bottom: 0; }
+
+.values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.value-block { display: flex; flex-direction: column; gap: 16px; }
+.value-block__number { font-family: var(--font-display); font-weight: 900; font-size: 3rem; color: var(--color-accent); line-height: 1; letter-spacing: -0.03em; }
+.value-block__title { font-family: var(--font-display); font-weight: 900; font-size: 1.5rem; text-transform: uppercase; letter-spacing: -0.01em; }
+.value-block__desc { font-size: 0.9375rem; line-height: 1.6; color: var(--color-text-muted); }
+
+.stats-strip { display: flex; justify-content: center; gap: 80px; padding: 64px 0; flex-wrap: wrap; }
+.stat-item { text-align: center; }
+.stat-item__number { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--color-accent); line-height: 1; letter-spacing: -0.03em; }
+.stat-item__label { font-size: 0.8125rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 8px; }
+
+.editorial-quote { font-family: var(--font-display); font-weight: 900; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.05; letter-spacing: -0.025em; text-transform: uppercase; max-width: 900px; }
+.editorial-quote em { font-style: italic; color: var(--color-accent); }
+
+@media (max-width: 809px) {
+  .values-grid { grid-template-columns: 1fr; gap: 32px; }
+  .stats-strip { gap: 40px; }
+}

@@ -1,0 +1,159 @@
+/* Events page — Energetic / Dynamic */
+.event-filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 48px; }
+.event-filter {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border-dark);
+  color: var(--color-text-muted-light);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  background: transparent;
+}
+.event-filter:hover, .event-filter.is-active {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-accent-glow);
+}
+
+.events-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+.event-card {
+  background: var(--color-bg-card-dark);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-dark);
+  transition: all var(--duration-fast) var(--ease-out);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.event-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.event-card__image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.event-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.event-card:hover .event-card__image img {
+  transform: scale(1.05);
+}
+
+.event-card__body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-card__date {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.event-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--color-text-white);
+}
+
+.event-card__desc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted-light);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.event-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border-dark);
+  flex-wrap: wrap;
+}
+
+/* Event detail page */
+.event-detail-header { max-width: 800px; }
+.event-detail-meta { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 24px; }
+.event-detail-meta__item { font-size: 0.9375rem; color: var(--color-text-muted-light); display: flex; align-items: center; gap: 8px; }
+
+.results-section { margin-top: 64px; }
+
+.results-category { margin-bottom: 48px; }
+.results-category__title { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; text-transform: uppercase; letter-spacing: -0.01em; color: var(--color-text-white); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--color-border-dark); }
+
+.result-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  transition: background var(--duration-fast) ease;
+}
+
+.result-row:hover { background: var(--color-bg-card-dark); }
+
+.result-row__position {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.result-row__position--1 { background: rgba(255,215,0,0.15); color: var(--color-gold); }
+.result-row__position--2 { background: rgba(192,192,192,0.15); color: var(--color-silver); }
+.result-row__position--3 { background: rgba(205,127,50,0.15); color: var(--color-bronze); }
+.result-row__position--other { background: rgba(255,255,255,0.05); color: var(--color-text-muted-light); }
+
+.result-row__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text-white);
+  flex: 1;
+}
+
+.result-row__name a {
+  transition: color var(--duration-fast) ease;
+}
+
+.result-row__name a:hover { color: var(--color-accent); }
+
+.result-row__medal { font-size: 1.25rem; }
+
+@media (max-width: 809px) {
+  .events-grid { grid-template-columns: 1fr; }
+  .event-detail-meta { gap: 16px; }
+}

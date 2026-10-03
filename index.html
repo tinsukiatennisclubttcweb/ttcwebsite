@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tinsukia Tennis Club — Tennis in Tinsukia, Assam</title>
+  <meta name="description"
+    content="Tinsukia Tennis Club is a grassroots tennis club in Tinsukia, Assam. Coaching, tournaments, community tennis and court access for players of all levels.">
+  <meta name="keywords"
+    content="Tinsukia Tennis Club, tennis club Tinsukia, tennis Assam, tennis coaching Tinsukia, tennis tournaments Tinsukia, tennis courts Tinsukia">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tinsukia Tennis Club — Tennis in Tinsukia, Assam">
+  <meta property="og:description"
+    content="Grassroots tennis in Upper Assam. Coaching, tournaments, community and court access for all levels.">
+  <meta property="og:image" content="images/hero-court.jpg">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;0,900;1,900&family=Public+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+  <!-- NAV (Will be hydrated by shared.js, hardcoded for initial paint) -->
+  <nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Tinsukia Tennis Club</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link is-active">Home</a>
+        <a href="club.html" class="nav__link">The Club</a>
+        <a href="coaching.html" class="nav__link">Coaching</a>
+        <a href="members.html" class="nav__link">Members</a>
+        <a href="talents.html" class="nav__link">Talents</a>
+        <a href="events.html" class="nav__link">Events</a>
+        <a href="facilities.html" class="nav__link">Facilities</a>
+        <a href="gallery.html" class="nav__link">Gallery</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+      <div class="nav__cta-wrap">
+        <a href="membership.html" class="btn btn--primary btn--sm">Join the Club <span class="btn__arrow">→</span></a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu"></div>
+
+  <!-- ============================================================
+       01 - HERO (Retained existing)
+       ============================================================ -->
+  <header class="home-hero">
+    <div class="home-hero__bg" data-parallax data-speed="0.3">
+      <img src="images/start frame.png" alt="Tinsukia Tennis Club courts illuminated at night under floodlights"
+        loading="eager">
+    </div>
+    <div class="home-hero__overlay"></div>
+    <div class="home-hero__content">
+      <div class="home-hero__location" data-reveal>
+        <span class="home-hero__dot"></span>
+        <span class="label" style="color: rgba(255,255,255,0.7);">Tinsukia, Assam — India</span>
+      </div>
+      <h1 class="home-hero__heading" data-reveal data-delay="100">
+        Play.<br>Compete.<br><em>Belong.</em>
+      </h1>
+      <div class="home-hero__bottom">
+        <p class="home-hero__desc" data-reveal data-delay="200">
+          Tinsukia Tennis Club — grassroots tennis in the heart of Upper Assam. A place to train, compete and be part of
+          a growing tennis community.
+        </p>
+        <div class="home-hero__actions" data-reveal data-delay="300">
+          <a href="membership.html" class="btn btn--primary">
+            Join the Club <span class="btn__arrow">→</span>
+          </a>
+          <a href="club.html" class="btn btn--secondary">
+            Explore the Club <span class="btn__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       02 - THE CLUB
+       ============================================================ -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number">01 — The Club</span>
+          <div class="accent-bar"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 data-clip-reveal>A Home for Tennis<br>in Tinsukia.</h2>
+        </div>
+      </div>
+
+      <div class="club-preview mt-xl">
+        <div class="club-preview__content" data-reveal>
+          <p class="body-lg text-muted mb-lg">
+            More than just a place to hit a ball. We are the heart of grassroots tennis in Upper Assam, built on the
+            belief that tennis should be accessible, competitive, and community-driven.
+          </p>
+          <p class="body-md text-muted mb-lg">
+            From junior development to recreational play, TTC brings together players of all ages and skill levels.
+          </p>
+          <a href="club.html" class="btn btn--dark">Discover the Club <span class="btn__arrow">→</span></a>
+        </div>
+        <div class="club-preview__visual" data-reveal="scale">
+          <div class="club-preview__visual-main">
+            <img src="images/herosectionmembers.png" alt="TTC Community" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03 - COACHING
+       ============================================================ -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number">02 — Coaching</span>
+          <div class="accent-bar"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 data-clip-reveal>Build Your<br>Game.</h2>
+        </div>
+      </div>
+
+      <div class="coaching-preview-grid" data-stagger-grid>
+        <div class="coaching-preview-card">
+          <h4 class="coaching-preview-card__title">Junior<br>Development</h4>
+          <p class="coaching-preview-card__desc">Dedicated programs for young players to develop technique, tactical
+            awareness and a love for the sport.</p>
+        </div>
+        <div class="coaching-preview-card">
+          <h4 class="coaching-preview-card__title">Adult<br>Coaching</h4>
+          <p class="coaching-preview-card__desc">Whether you're picking up a racket for the first time or looking to
+            refine your strokes.</p>
+        </div>
+        <div class="coaching-preview-card">
+          <h4 class="coaching-preview-card__title">Competitive<br>Training</h4>
+          <p class="coaching-preview-card__desc">High-intensity drills and match simulation for tournament-ready
+            athletes.</p>
+        </div>
+      </div>
+
+      <div class="mt-xl text-center" data-reveal>
+        <a href="coaching.html" class="btn btn--primary">Explore Coaching <span class="btn__arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04 - MEMBERS
+       ============================================================ -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number text-accent">03 — Members</span>
+          <div class="accent-bar" style="background: var(--color-accent);"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 class="text-white" data-clip-reveal>The People Make<br>The Club.</h2>
+        </div>
+      </div>
+
+      <div class="members-preview-grid" id="previewMembers">
+        <!-- Rendered by home.js (4-6 members) -->
+      </div>
+
+      <div class="mt-xl text-center" data-reveal>
+        <a href="members.html" class="btn btn--secondary">Meet Our Members <span class="btn__arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05 - CLUB TALENTS
+       ============================================================ -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number">04 — Club Talents</span>
+          <div class="accent-bar"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 data-clip-reveal>Made On These<br>Courts.</h2>
+          <p class="body-lg text-muted mt-sm" data-reveal data-delay="100">
+            The competitors carrying the TTC banner in tournaments across the region.
+          </p>
+        </div>
+      </div>
+
+      <div class="talents-preview-grid" id="previewTalents">
+        <!-- Rendered by home.js (3-4 talents) -->
+      </div>
+
+      <div class="mt-xl text-center" data-reveal>
+        <a href="talents.html" class="btn btn--dark">Meet Our Talents <span class="btn__arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06 - EVENTS
+       ============================================================ -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number text-accent">05 — Events</span>
+          <div class="accent-bar" style="background: var(--color-accent);"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 class="text-white" data-clip-reveal>What's Happening<br>On Court.</h2>
+        </div>
+      </div>
+
+      <div class="events-preview-grid" id="previewEvents" data-stagger-grid>
+        <!-- Rendered by home.js (2-3 events) -->
+      </div>
+
+      <div class="mt-xl text-center" data-reveal>
+        <a href="events.html" class="btn btn--secondary">View All Events <span class="btn__arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       07 - FACILITIES
+       ============================================================ -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number">06 — Facilities</span>
+          <div class="accent-bar"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 data-clip-reveal>Your Court<br>Awaits.</h2>
+        </div>
+      </div>
+
+      <div class="facilities-preview" data-reveal="scale">
+        <div class="facilities-preview__bg" data-parallax data-speed="0.1">
+          <img src="images/thecourt.png" alt="Aerial view of courts" loading="lazy">
+        </div>
+        <div class="facilities-preview__overlay"></div>
+        <div class="facilities-preview__content">
+          <div class="facilities-preview__stats">
+            <div class="facilities-preview__stat">
+              <span class="facilities-preview__stat-val">2</span>
+              <span class="facilities-preview__stat-label">Championship Courts</span>
+            </div>
+            <div class="facilities-preview__stat">
+              <span class="facilities-preview__stat-val">LED</span>
+              <span class="facilities-preview__stat-label">Floodlighting</span>
+            </div>
+          </div>
+          <a href="facilities.html" class="btn btn--primary mt-md">Explore Our Facilities <span
+              class="btn__arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       08 - GALLERY
+       ============================================================ -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number">07 — Gallery</span>
+          <div class="accent-bar"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 data-clip-reveal>Moments Caught<br>In Time.</h2>
+        </div>
+      </div>
+
+      <div class="gallery-preview-grid" id="previewGallery" data-stagger-grid>
+        <!-- Rendered by home.js (4-6 images) -->
+      </div>
+
+      <div class="mt-xl text-center" data-reveal>
+        <a href="gallery.html" class="btn btn--dark">View Full Gallery <span class="btn__arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       09 - MEMBERSHIP
+       ============================================================ -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number">08 — Membership</span>
+          <div class="accent-bar"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 data-clip-reveal>Find Your Place<br>On Court.</h2>
+        </div>
+      </div>
+
+      <div class="membership-preview-grid" data-stagger-grid>
+        <div class="membership-preview-reason">
+          <div class="membership-preview-icon"></div>
+          <div class="membership-preview-content">
+            <h4>Unlimited Access</h4>
+            <p>Book courts during club hours for practice and friendly sets.</p>
+          </div>
+        </div>
+        <div class="membership-preview-reason">
+          <div class="membership-preview-icon"></div>
+          <div class="membership-preview-content">
+            <h4>Compete</h4>
+            <p>Priority entry to tournaments and eligibility for team events.</p>
+          </div>
+        </div>
+        <div class="membership-preview-reason">
+          <div class="membership-preview-icon"></div>
+          <div class="membership-preview-content">
+            <h4>Community</h4>
+            <p>Find hitting partners and join our vibrant tennis network.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-xl text-center" data-reveal>
+        <a href="membership.html" class="btn btn--primary">Become a Member <span class="btn__arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10 - FINAL CTA / CONTACT
+       ============================================================ -->
+  <section class="section section--dark home-cta" style="border-top: 1px solid var(--color-border-dark);">
+    <div class="container">
+      <span class="section-number text-accent" data-reveal="left">Your Game Starts Here</span>
+      <h2 class="display-heading home-cta__heading text-white mt-sm" data-clip-reveal>
+        See You<br>on Court.
+      </h2>
+      <p class="home-cta__desc" data-reveal>
+        Ready to become part of the Tinsukia tennis community?
+      </p>
+      <div class="home-cta__actions" data-reveal data-delay="100">
+        <a href="membership.html" class="btn btn--primary">
+          Join the Club <span class="btn__arrow">→</span>
+        </a>
+        <a href="contact.html" class="btn btn--secondary">
+          Contact Us <span class="btn__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer-placeholder"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/home.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('footer-placeholder').outerHTML = TTC.getFooterHTML();
+      const mobileMenuHtml = TTC.getNavHTML().split('class="mobile-menu"')[1];
+      if (mobileMenuHtml) document.getElementById('mobileMenu').outerHTML = '<div class="mobile-menu"' + mobileMenuHtml;
+    });
+  </script>
+</body>
+
+</html>

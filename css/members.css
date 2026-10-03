@@ -1,0 +1,118 @@
+/* ============================================================
+   MEMBERS PAGE — Human / Community
+   ============================================================ */
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.member-card {
+  background: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  transition: all var(--duration-fast) var(--ease-out);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+}
+
+.member-card__photo {
+  height: 240px;
+  background: var(--color-bg-dark-lighter);
+  position: relative;
+}
+
+.member-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.member-card:hover .member-card__photo img {
+  transform: scale(1.05);
+}
+
+.member-card__body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.member-card__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.member-card__role {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.member-card__since {
+  font-size: 0.75rem;
+  color: var(--color-text-muted-light);
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.member-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.member-filter {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  background: var(--color-bg-white);
+}
+
+.member-filter:hover, .member-filter.is-active {
+  border-color: var(--color-bg-dark);
+  color: var(--color-text-white);
+  background: var(--color-bg-dark);
+}
+
+@media (max-width: 1199px) {
+  .members-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 809px) {
+  .members-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .member-card__photo { height: 200px; }
+}
+
+@media (max-width: 480px) {
+  .members-grid { grid-template-columns: 1fr; }
+}

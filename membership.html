@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Membership — Tinsukia Tennis Club</title>
+  <meta name="description" content="Join Tinsukia Tennis Club. View membership fees, categories, and send a membership request to become part of Tinsukia's growing tennis community.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;0,900;1,900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/membership.css">
+</head>
+<body>
+
+  <nav class="nav nav--solid" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Tinsukia Tennis Club</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="club.html" class="nav__link">The Club</a>
+        <a href="coaching.html" class="nav__link">Coaching</a>
+        <a href="members.html" class="nav__link">Members</a>
+        <a href="talents.html" class="nav__link">Talents</a>
+        <a href="events.html" class="nav__link">Events</a>
+        <a href="facilities.html" class="nav__link">Facilities</a>
+        <a href="gallery.html" class="nav__link">Gallery</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+      <div class="nav__cta-wrap"><a href="membership.html" class="btn btn--primary btn--sm is-active">Join the Club</a></div>
+      <button class="nav__hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu"></div>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <header class="membership-hero">
+    <div class="membership-hero__bg" data-parallax data-speed="0.2">
+      <img src="images/membership-hero.jpg" alt="Tennis court at sunset" loading="eager">
+    </div>
+    <div class="membership-hero__overlay"></div>
+    <div class="membership-hero__content">
+      <div class="membership-hero__label" data-reveal>
+        <span class="label text-accent">Membership</span>
+      </div>
+      <h1 class="membership-hero__heading" data-clip-reveal>Be A Part Of<br>Our Tennis Community.</h1>
+      <p class="membership-hero__desc" data-reveal data-delay="100">
+        Join Tinsukia Tennis Club and become part of a growing tennis community focused on playing, improving, competing and connecting.
+      </p>
+    </div>
+    <div class="scroll-indicator" data-reveal="fade" data-delay="600">
+      <span class="scroll-indicator__text">Scroll</span>
+      <svg class="scroll-indicator__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       FEE STRUCTURE + FORM (Two-Column)
+       ============================================================ -->
+  <section class="section section--cream">
+    <div class="container">
+
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number">Pricing</span>
+          <div class="accent-bar"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 data-clip-reveal>Membership<br>Fee Structure.</h2>
+          <p class="body-lg text-muted mt-sm" data-reveal data-delay="100">
+            Choose the membership plan that suits you. Our membership categories are designed for junior and senior players, with options for different levels of participation.
+          </p>
+        </div>
+      </div>
+
+      <div class="membership-layout">
+
+        <!-- LEFT COLUMN: Fee Table + Notes -->
+        <div>
+
+          <!-- Desktop Table -->
+          <div class="membership-table-wrapper" data-reveal>
+            <table class="membership-table" id="feeTable">
+              <thead>
+                <tr>
+                  <th>Sl</th>
+                  <th>Player Status</th>
+                  <th>Joining Fee</th>
+                  <th>Monthly Fee</th>
+                  <th>Absent Period</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="fee-row--selectable" data-category="Junior Beginner">
+                  <td>1.</td>
+                  <td>
+                    <span class="fee-row__status">Junior Beginner</span>
+                    <span class="fee-row__select-hint">Select →</span>
+                  </td>
+                  <td class="fee-row__amount">Rs. 1,000</td>
+                  <td class="fee-row__amount">Rs. 1,500</td>
+                  <td class="fee-row__amount">Rs. 1,000</td>
+                </tr>
+                <tr class="fee-row--selectable" data-category="Junior Advance">
+                  <td>2.</td>
+                  <td>
+                    <span class="fee-row__status">Junior Advance</span>
+                    <span class="fee-row__select-hint">Select →</span>
+                  </td>
+                  <td class="fee-row__amount">Rs. 1,000</td>
+                  <td class="fee-row__amount">Rs. 1,500</td>
+                  <td class="fee-row__amount">Rs. 1,000</td>
+                </tr>
+                <tr class="fee-row--selectable" data-category="Senior Beginner">
+                  <td>3.</td>
+                  <td>
+                    <span class="fee-row__status">Senior Beginners</span>
+                    <span class="fee-row__status-sub">(Age Above 18 Yrs)</span>
+                    <span class="fee-row__select-hint">Select →</span>
+                  </td>
+                  <td class="fee-row__amount">Rs. 2,000</td>
+                  <td class="fee-row__amount">Rs. 1,500</td>
+                  <td class="fee-row__amount">Rs. 1,500</td>
+                </tr>
+                <tr class="fee-row--selectable" data-category="Senior Advance">
+                  <td>4.</td>
+                  <td>
+                    <span class="fee-row__status">Senior Advance</span>
+                    <span class="fee-row__select-hint">Select →</span>
+                  </td>
+                  <td class="fee-row__amount">Rs. 2,000</td>
+                  <td class="fee-row__amount">Rs. 1,500</td>
+                  <td class="fee-row__amount">Rs. 1,500</td>
+                </tr>
+                <tr class="fee-row--special">
+                  <td>5.</td>
+                  <td colspan="4">
+                    <span class="fee-row__info"><em>Guest Player Junior</em> — Per Hour: <em>Rs. 100/-</em> Only</span>
+                  </td>
+                </tr>
+                <tr class="fee-row--special">
+                  <td>6.</td>
+                  <td colspan="4">
+                    <span class="fee-row__info"><em>Special Coaching (Optional)</em> — Informed in due time with fee details</span>
+                  </td>
+                </tr>
+                <tr class="fee-row--special">
+                  <td>7.</td>
+                  <td colspan="4">
+                    <span class="fee-row__info"><em>Late Fees Payment Penalty</em> — <em>Rs. 500/-</em> only per month for all</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Mobile Cards -->
+          <div class="fee-cards-mobile" data-stagger-grid>
+            <div class="fee-card fee-card--selectable" data-category="Junior Beginner">
+              <div class="fee-card__header">
+                <div>
+                  <div class="fee-card__title">Junior Beginner</div>
+                </div>
+                <span class="fee-card__select-hint">Select →</span>
+              </div>
+              <div class="fee-card__grid">
+                <div>
+                  <div class="fee-card__detail-label">Joining Fee</div>
+                  <div class="fee-card__detail-value">Rs. 1,000</div>
+                </div>
+                <div>
+                  <div class="fee-card__detail-label">Monthly Fee</div>
+                  <div class="fee-card__detail-value">Rs. 1,500</div>
+                </div>
+                <div>
+                  <div class="fee-card__detail-label">Absent Period</div>
+                  <div class="fee-card__detail-value">Rs. 1,000</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fee-card fee-card--selectable" data-category="Junior Advance">
+              <div class="fee-card__header">
+                <div>
+                  <div class="fee-card__title">Junior Advance</div>
+                </div>
+                <span class="fee-card__select-hint">Select →</span>
+              </div>
+              <div class="fee-card__grid">
+                <div>
+                  <div class="fee-card__detail-label">Joining Fee</div>
+                  <div class="fee-card__detail-value">Rs. 1,000</div>
+                </div>
+                <div>
+                  <div class="fee-card__detail-label">Monthly Fee</div>
+                  <div class="fee-card__detail-value">Rs. 1,500</div>
+                </div>
+                <div>
+                  <div class="fee-card__detail-label">Absent Period</div>
+                  <div class="fee-card__detail-value">Rs. 1,000</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fee-card fee-card--selectable" data-category="Senior Beginner">
+              <div class="fee-card__header">
+                <div>
+                  <div class="fee-card__title">Senior Beginners</div>
+                  <div class="fee-card__subtitle">(Age Above 18 Yrs)</div>
+                </div>
+                <span class="fee-card__select-hint">Select →</span>
+              </div>
+              <div class="fee-card__grid">
+                <div>
+                  <div class="fee-card__detail-label">Joining Fee</div>
+                  <div class="fee-card__detail-value">Rs. 2,000</div>
+                </div>
+                <div>
+                  <div class="fee-card__detail-label">Monthly Fee</div>
+                  <div class="fee-card__detail-value">Rs. 1,500</div>
+                </div>
+                <div>
+                  <div class="fee-card__detail-label">Absent Period</div>
+                  <div class="fee-card__detail-value">Rs. 1,500</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fee-card fee-card--selectable" data-category="Senior Advance">
+              <div class="fee-card__header">
+                <div>
+                  <div class="fee-card__title">Senior Advance</div>
+                </div>
+                <span class="fee-card__select-hint">Select →</span>
+              </div>
+              <div class="fee-card__grid">
+                <div>
+                  <div class="fee-card__detail-label">Joining Fee</div>
+                  <div class="fee-card__detail-value">Rs. 2,000</div>
+                </div>
+                <div>
+                  <div class="fee-card__detail-label">Monthly Fee</div>
+                  <div class="fee-card__detail-value">Rs. 1,500</div>
+                </div>
+                <div>
+                  <div class="fee-card__detail-label">Absent Period</div>
+                  <div class="fee-card__detail-value">Rs. 1,500</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fee-card fee-card--special">
+              <div class="fee-card__header">
+                <div>
+                  <span class="fee-card__number">5</span>
+                </div>
+              </div>
+              <p class="fee-card__info"><em>Guest Player Junior</em> — Per Hour: <em>Rs. 100/-</em> Only</p>
+            </div>
+
+            <div class="fee-card fee-card--special">
+              <div class="fee-card__header">
+                <div>
+                  <span class="fee-card__number">6</span>
+                </div>
+              </div>
+              <p class="fee-card__info"><em>Special Coaching (Optional)</em> — Informed in due time with fee details</p>
+            </div>
+
+            <div class="fee-card fee-card--special">
+              <div class="fee-card__header">
+                <div>
+                  <span class="fee-card__number">7</span>
+                </div>
+              </div>
+              <p class="fee-card__info"><em>Late Fees Payment Penalty</em> — <em>Rs. 500/-</em> only per month for all</p>
+            </div>
+          </div>
+
+          <!-- Important Notes -->
+          <div class="important-notes" data-reveal>
+            <div class="important-notes__header">
+              <span class="important-notes__icon">i</span>
+              <h4 class="important-notes__title">Important Notes</h4>
+            </div>
+            <div class="important-notes__list">
+              <p class="important-notes__item">
+                Fees are to be paid in advance before 15th of the month and late payments attract penalty as mentioned earlier.
+              </p>
+              <p class="important-notes__item">
+                For new admission 03 months fee to be paid in advance including joining fee.
+              </p>
+            </div>
+            <div class="important-notes__penalty">
+              <span class="important-notes__penalty-label">Late Payment Penalty</span>
+              <span class="important-notes__penalty-value">Rs. 500/- per month for all</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: Form + Contact -->
+        <div class="membership-form-wrapper">
+
+          <form class="membership-form" id="membershipForm" novalidate>
+            <h3 class="membership-form__title" data-reveal>Send a Membership Request</h3>
+            <p class="membership-form__desc" data-reveal data-delay="50">
+              Interested in joining Tinsukia Tennis Club? Fill in the form below and we'll get back to you with the next steps.
+            </p>
+
+            <div class="form-group" data-reveal data-delay="100">
+              <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+              <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Enter your full name" required autocomplete="name">
+              <div class="form-error" id="fullNameError">
+                <svg class="form-error__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>Please enter your full name</span>
+              </div>
+            </div>
+
+            <div class="form-row" data-reveal data-delay="150">
+              <div class="form-group">
+                <label for="dob" class="form-label">Date of Birth <span class="required">*</span></label>
+                <input type="date" id="dob" name="dob" class="form-input" required>
+                <div class="form-error" id="dobError">
+                  <svg class="form-error__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Please enter a valid date of birth</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="playerCategory" class="form-label">Player Category <span class="required">*</span></label>
+                <select id="playerCategory" name="playerCategory" class="form-select" required>
+                  <option value="" disabled selected>Select category</option>
+                  <option value="Junior Beginner">Junior Beginner</option>
+                  <option value="Junior Advance">Junior Advance</option>
+                  <option value="Senior Beginner">Senior Beginner</option>
+                  <option value="Senior Advance">Senior Advance</option>
+                  <option value="Guest Player Junior">Guest Player Junior</option>
+                  <option value="Special Coaching">Special Coaching</option>
+                </select>
+                <div class="form-error" id="playerCategoryError">
+                  <svg class="form-error__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Please select a player category</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row" data-reveal data-delay="200">
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required autocomplete="tel">
+                <div class="form-error" id="phoneError">
+                  <svg class="form-error__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Please enter a valid phone number</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email">
+                <div class="form-error" id="emailError">
+                  <svg class="form-error__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Please enter a valid email address</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" data-reveal data-delay="250">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" id="address" name="address" class="form-input" placeholder="Your address (optional)" autocomplete="street-address">
+            </div>
+
+            <div class="form-group" data-reveal data-delay="300">
+              <label for="message" class="form-label">Message / Additional Information</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Anything else you'd like us to know? (optional)" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg form-submit" id="submitBtn" data-reveal data-delay="350">
+              <span class="form-submit__text">Send Membership Request <span class="btn__arrow">→</span></span>
+              <span class="form-submit__spinner"><span class="spinner"></span></span>
+            </button>
+
+            <!-- Success Overlay -->
+            <div class="form-overlay" id="successOverlay">
+              <div class="form-overlay__icon form-overlay__icon--success">✓</div>
+              <h4 class="form-overlay__title">Membership Request Sent</h4>
+              <p class="form-overlay__desc">Thank you for your interest in Tinsukia Tennis Club. Our team will get in touch with you shortly.</p>
+              <button type="button" class="btn btn--solid-dark" id="backToMembershipBtn">Back to Membership <span class="btn__arrow">→</span></button>
+            </div>
+
+            <!-- Error Overlay -->
+            <div class="form-overlay" id="errorOverlay">
+              <div class="form-overlay__icon form-overlay__icon--error">!</div>
+              <h4 class="form-overlay__title">Something Went Wrong</h4>
+              <p class="form-overlay__desc">Please try again or contact the club directly.</p>
+              <div class="flex flex--gap-sm flex--wrap" style="justify-content: center;">
+                <button type="button" class="btn btn--solid-dark" id="retryBtn">Try Again <span class="btn__arrow">→</span></button>
+                <a href="https://wa.me/919435037032" class="btn btn--whatsapp" target="_blank">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </form>
+
+          <!-- Contact Card -->
+          <div class="contact-card" data-reveal>
+            <h4 class="contact-card__title">Tinsukia Tennis Club</h4>
+            <p class="contact-card__address">
+              Tinsukia College Road<br>
+              Kachujan<br>
+              Tinsukia, Assam 786125<br>
+              India
+            </p>
+            <a href="tel:+919435037032" class="contact-card__phone">+91 94350 37032</a>
+            <div class="contact-card__actions">
+              <a href="tel:+919435037032" class="btn btn--secondary btn--sm" style="border-color: var(--color-border-dark); color: var(--color-text-muted-light);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Call the Club
+              </a>
+              <a href="https://wa.me/919435037032" class="btn btn--whatsapp btn--sm" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp the Club
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BENEFITS
+       ============================================================ -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header section-header--centered mb-xl">
+        <span class="section-number text-accent" data-reveal>Benefits</span>
+        <h2 class="mt-sm text-white" data-clip-reveal>Why Join TTC?</h2>
+      </div>
+
+      <div class="benefits-grid" data-stagger-grid>
+        <div class="benefit-block">
+          <div class="benefit-block__icon">🎾</div>
+          <h4 class="benefit-block__title">Access</h4>
+          <p class="benefit-block__desc">Book courts during club hours for practice, friendly matches, or competitive sets.</p>
+        </div>
+        <div class="benefit-block">
+          <div class="benefit-block__icon">📈</div>
+          <h4 class="benefit-block__title">Coaching</h4>
+          <p class="benefit-block__desc">Train with experienced coaches in structured programs designed for every skill level.</p>
+        </div>
+        <div class="benefit-block">
+          <div class="benefit-block__icon">🏆</div>
+          <h4 class="benefit-block__title">Competition</h4>
+          <p class="benefit-block__desc">Represent the club in tournaments and get priority entry to internal and regional events.</p>
+        </div>
+        <div class="benefit-block">
+          <div class="benefit-block__icon">🤝</div>
+          <h4 class="benefit-block__title">Community</h4>
+          <p class="benefit-block__desc">Join a vibrant community of players, find hitting partners, and attend club social events.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer-placeholder"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/membership.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('footer-placeholder').outerHTML = TTC.getFooterHTML();
+      const mobileMenuHtml = TTC.getNavHTML().split('class="mobile-menu"')[1];
+      if (mobileMenuHtml) document.getElementById('mobileMenu').outerHTML = '<div class="mobile-menu"' + mobileMenuHtml;
+    });
+  </script>
+</body>
+</html>

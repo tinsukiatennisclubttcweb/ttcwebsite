@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Club — Tinsukia Tennis Club</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;0,900;1,900&family=Public+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/club.css">
+</head>
+
+<body>
+
+  <!-- Dynamic NAV injected by shared.js (requires the DOM to render first, so hardcoding fallback) -->
+  <nav class="nav nav--solid" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Tinsukia Tennis Club</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="club.html" class="nav__link is-active">The Club</a>
+        <a href="coaching.html" class="nav__link">Coaching</a>
+        <a href="members.html" class="nav__link">Members</a>
+        <a href="talents.html" class="nav__link">Talents</a>
+        <a href="events.html" class="nav__link">Events</a>
+        <a href="facilities.html" class="nav__link">Facilities</a>
+        <a href="gallery.html" class="nav__link">Gallery</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+      <div class="nav__cta-wrap"><a href="membership.html" class="btn btn--primary btn--sm">Join the Club <span
+            class="btn__arrow">→</span></a></div>
+      <button class="nav__hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="club.html" class="mobile-menu__link is-active">The Club</a>
+    <a href="coaching.html" class="mobile-menu__link">Coaching</a>
+    <a href="members.html" class="mobile-menu__link">Members</a>
+    <a href="talents.html" class="mobile-menu__link">Talents</a>
+    <a href="events.html" class="mobile-menu__link">Events</a>
+    <a href="facilities.html" class="mobile-menu__link">Facilities</a>
+    <a href="gallery.html" class="mobile-menu__link">Gallery</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <div class="mobile-menu__cta"><a href="membership.html" class="btn btn--primary">Join the Club</a></div>
+  </div>
+
+  <header class="page-hero page-hero--editorial">
+    <div class="page-hero__bg" data-parallax data-speed="0.2">
+      <img src="images/the club page/hero.jpg" alt="TTC Courts" loading="eager">
+    </div>
+    <div class="page-hero__overlay page-hero__overlay--heavy"></div>
+    <div class="page-hero__content">
+      <div class="page-hero__label" data-reveal><span class="label text-accent">Our Story</span></div>
+      <h1 class="page-hero__heading" data-clip-reveal>The Club.</h1>
+    </div>
+  </header>
+
+  <section class="section section--white">
+    <div class="container container--narrow">
+      <div class="club-story" data-reveal>
+        <p>Tinsukia Tennis Club is more than just a place to hit a ball. It is the heart of grassroots tennis in Upper
+          Assam — built on the belief that tennis should be accessible, competitive, and community-driven.</p>
+        <p>Founded by local tennis enthusiasts, TTC has grown from a handful of players to a vibrant community spanning
+          all ages and skill levels. Our focus has always been twofold: developing junior talent to compete at the
+          highest levels, and providing a welcoming environment for recreational players to enjoy the game.</p>
+        <p>We are proud to host major regional tournaments, run comprehensive coaching programs, and maintain some of
+          the finest playing facilities in the district.</p>
+      </div>
+      <div class="mt-lg" data-reveal>
+        <div class="img-rounded" style="height: 400px;">
+          <img src="images/the club page/club.png" alt="TTC Community" class="img-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number">Values</span>
+          <div class="accent-bar"></div>
+        </div>
+        <div class="section-header__right">
+          <h2 data-clip-reveal style="color: var(--color-text-white);">What We<br>Stand For.</h2>
+        </div>
+      </div>
+      <div class="values-grid mt-lg">
+        <div class="value-block" data-reveal>
+          <div class="value-block__number">01</div>
+          <h3 class="value-block__title text-white">Play</h3>
+          <p class="value-block__desc">Creating opportunities for everyone to get on court. From beginners hitting their
+            first forehand to seasoned veterans playing competitive sets.</p>
+        </div>
+        <div class="value-block" data-reveal data-delay="100">
+          <div class="value-block__number">02</div>
+          <h3 class="value-block__title text-white">Develop</h3>
+          <p class="value-block__desc">A commitment to grassroots coaching. Building technical excellence, tactical
+            awareness, and mental resilience in our junior and adult players.</p>
+        </div>
+        <div class="value-block" data-reveal data-delay="200">
+          <div class="value-block__number">03</div>
+          <h3 class="value-block__title text-white">Belong</h3>
+          <p class="value-block__desc">Fostering a welcoming community where friendships are forged across the net. We
+            believe tennis is a lifelong sport best shared with others.</p>
+        </div>
+      </div>
+
+      <div class="stats-strip mt-xl">
+        <div class="stat-item" data-reveal>
+          <div class="stat-item__number">2</div>
+          <div class="stat-item__label text-muted-light">Championship Courts</div>
+        </div>
+        <div class="stat-item" data-reveal data-delay="100">
+          <div class="stat-item__number">100+</div>
+          <div class="stat-item__label text-muted-light">Active Members</div>
+        </div>
+        <div class="stat-item" data-reveal data-delay="200">
+          <div class="stat-item__number">4</div>
+          <div class="stat-item__label text-muted-light">Annual Tournaments</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container text-center">
+      <h2 class="editorial-quote mx-auto" data-clip-reveal>
+        "Growing the game in Upper Assam, <em>one rally at a time.</em>"
+      </h2>
+      <div class="mt-xl" data-reveal>
+        <a href="membership.html" class="btn btn--primary btn--lg">Become Part of the Story <span
+            class="btn__arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer-placeholder"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/shared.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('footer-placeholder').outerHTML = TTC.getFooterHTML();
+    });
+  </script>
+</body>
+
+</html>

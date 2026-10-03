@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Talents — Tinsukia Tennis Club</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;0,900;1,900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/members.css"> <!-- For filters -->
+  <link rel="stylesheet" href="css/talents.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav nav--solid" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Tinsukia Tennis Club</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="club.html" class="nav__link">The Club</a>
+        <a href="coaching.html" class="nav__link">Coaching</a>
+        <a href="members.html" class="nav__link">Members</a>
+        <a href="talents.html" class="nav__link is-active">Talents</a>
+        <a href="events.html" class="nav__link">Events</a>
+        <a href="facilities.html" class="nav__link">Facilities</a>
+        <a href="gallery.html" class="nav__link">Gallery</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+      <div class="nav__cta-wrap"><a href="membership.html" class="btn btn--primary btn--sm">Join the Club <span class="btn__arrow">→</span></a></div>
+      <button class="nav__hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu"></div>
+
+  <section class="section section--dark" style="min-height: 100vh; padding-top: 140px;">
+    <div class="container">
+      <div class="section-header section-header--split">
+        <div class="section-header__left" data-reveal="left">
+          <span class="section-number">Players</span>
+          <div class="accent-bar"></div>
+        </div>
+        <div class="section-header__right">
+          <h1 class="h1 text-white" data-clip-reveal>Club Talents.</h1>
+          <p class="body-lg text-muted-light mt-sm" data-reveal data-delay="100" style="max-width: 500px;">
+            The competitors carrying the TTC banner in local, state, and regional tournaments.
+          </p>
+        </div>
+      </div>
+
+      <div class="member-filters mt-xl" data-reveal style="justify-content: flex-start; margin-bottom: 32px;">
+        <button class="member-filter is-active" data-filter="all" style="border-color:var(--color-border-dark); background:transparent;">All Talents</button>
+        <button class="member-filter" data-filter="mens" style="border-color:var(--color-border-dark); background:transparent;">Men's</button>
+        <button class="member-filter" data-filter="womens" style="border-color:var(--color-border-dark); background:transparent;">Women's</button>
+        <button class="member-filter" data-filter="juniors" style="border-color:var(--color-border-dark); background:transparent;">Juniors</button>
+      </div>
+
+      <div class="talents-grid" id="talentsGrid">
+        <p class="text-muted-light col-span-full py-8">Loading talents...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer-placeholder"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/talents.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('footer-placeholder').outerHTML = TTC.getFooterHTML();
+      const mobileMenuHtml = TTC.getNavHTML().split('class="mobile-menu"')[1];
+      if (mobileMenuHtml) document.getElementById('mobileMenu').outerHTML = '<div class="mobile-menu"' + mobileMenuHtml;
+    });
+  </script>
+</body>
+</html>

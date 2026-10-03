@@ -1,0 +1,60 @@
+/* Contact page — Minimal / Functional */
+
+.contact-hero {
+  padding-top: calc(var(--nav-height) + 80px);
+  padding-bottom: 64px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.contact-info-block {
+  margin-bottom: 48px;
+}
+
+.contact-info-block__label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.contact-info-block__val {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+}
+
+.contact-info-block__val a {
+  transition: color var(--duration-fast) ease;
+}
+
+.contact-info-block__val a:hover {
+  color: var(--color-accent);
+}
+
+.contact-map-wrapper {
+  height: 500px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-dark);
+}
+
+.contact-map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(0.2) contrast(1.1);
+}
+
+@media (max-width: 809px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .contact-map-wrapper { height: 400px; }
+}

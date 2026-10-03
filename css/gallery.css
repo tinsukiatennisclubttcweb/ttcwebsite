@@ -1,0 +1,79 @@
+/* ============================================================
+   GALLERY PAGE — Visual / Immersive
+   ============================================================ */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--color-bg-dark);
+  height: 280px;
+}
+
+/* Create a masonry-like varied height feel using row spans (simplified) */
+.gallery-item:nth-child(4n + 1) { grid-column: span 2; grid-row: span 2; height: 576px; }
+.gallery-item:nth-child(5n + 3) { grid-column: span 2; }
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 17, 23, 0.4);
+  opacity: 0;
+  transition: opacity var(--duration-fast) ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-item:hover .gallery-item__overlay {
+  opacity: 1;
+}
+
+.gallery-item__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1199px) {
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  .gallery-item:nth-child(4n + 1) { grid-column: span 2; grid-row: span 2; height: 576px; }
+  .gallery-item:nth-child(5n + 3) { grid-column: span 1; }
+}
+
+@media (max-width: 809px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .gallery-item { height: 200px; }
+  .gallery-item:nth-child(4n + 1) { grid-column: span 2; grid-row: span 1; height: 300px; }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-item { height: 240px; }
+  .gallery-item:nth-child(4n + 1) { grid-column: span 1; grid-row: span 1; height: 240px; }
+}

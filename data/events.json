@@ -1,0 +1,122 @@
+[
+  {
+    "id": "tinsukia-open-2026",
+    "title": "Tinsukia Open 2026",
+    "type": "tournament",
+    "date": "2026-03-15",
+    "end_date": "2026-03-17",
+    "location": "Tinsukia Tennis Club",
+    "description": "The club's flagship open tournament, welcoming players from across Assam and the Northeast. Three days of competitive tennis across multiple categories, showcasing the best talent in the region.",
+    "image": "images/tournament-match.jpg",
+    "status": "completed",
+    "categories": ["Men's Singles", "Women's Singles", "Men's Doubles"],
+    "results": {
+      "Men's Singles": [
+        { "position": 1, "player_id": "arjun-das", "player_name": "Arjun Das" },
+        { "position": 2, "player_id": "rahul-sharma", "player_name": "Rahul Sharma" },
+        { "position": 3, "player_id": "vikram-patel", "player_name": "Vikram Patel" }
+      ],
+      "Women's Singles": [
+        { "position": 1, "player_id": "priya-borah", "player_name": "Priya Borah" }
+      ]
+    },
+    "gallery": ["images/tournament-match.jpg", "images/community.jpg"]
+  },
+  {
+    "id": "ttc-club-championship-2025",
+    "title": "TTC Club Championship 2025",
+    "type": "tournament",
+    "date": "2025-11-08",
+    "end_date": "2025-11-10",
+    "location": "Tinsukia Tennis Club",
+    "description": "The annual club championship — the most anticipated event in the TTC calendar. Open to all club members, this tournament determines the club champion in each category for the year.",
+    "image": "images/start frame.png",
+    "status": "completed",
+    "categories": ["Men's Singles", "Women's Singles", "Juniors"],
+    "results": {
+      "Men's Singles": [
+        { "position": 1, "player_id": "rahul-sharma", "player_name": "Rahul Sharma" },
+        { "position": 2, "player_id": "arjun-das", "player_name": "Arjun Das" }
+      ]
+    },
+    "gallery": ["images/start frame.png"]
+  },
+  {
+    "id": "ttc-junior-championship-2026",
+    "title": "TTC Junior Championship 2026",
+    "type": "tournament",
+    "date": "2026-06-20",
+    "end_date": "2026-06-22",
+    "location": "Tinsukia Tennis Club",
+    "description": "A dedicated tournament for junior players under 18. Designed to give young competitors match experience in a structured tournament environment, building confidence and competitive readiness.",
+    "image": "images/coaching-session.jpg",
+    "status": "completed",
+    "categories": ["Boys Singles", "Girls Singles"],
+    "results": {
+      "Boys Singles": [
+        { "position": 1, "player_id": "deep-gogoi", "player_name": "Deep Gogoi" }
+      ]
+    },
+    "gallery": ["images/coaching-session.jpg"]
+  },
+  {
+    "id": "ttc-womens-championship-2026",
+    "title": "TTC Women's Championship 2026",
+    "type": "tournament",
+    "date": "2026-08-10",
+    "end_date": "2026-08-11",
+    "location": "Tinsukia Tennis Club",
+    "description": "Celebrating women's tennis at TTC. This championship provides a competitive platform exclusively for women players of all levels, promoting participation and development in women's tennis across the region.",
+    "image": "images/tennis-serve.jpg",
+    "status": "completed",
+    "categories": ["Women's Singles", "Women's Doubles"],
+    "results": {
+      "Women's Singles": [
+        { "position": 1, "player_id": "priya-borah", "player_name": "Priya Borah" }
+      ]
+    },
+    "gallery": ["images/tennis-serve.jpg"]
+  },
+  {
+    "id": "summer-coaching-camp-2026",
+    "title": "Summer Coaching Camp 2026",
+    "type": "camp",
+    "date": "2026-05-01",
+    "end_date": "2026-05-10",
+    "location": "Tinsukia Tennis Club",
+    "description": "A 10-day intensive coaching camp for juniors and beginners. Covering fundamentals, stroke technique, footwork, match play, and fitness — all guided by the club's coaching team.",
+    "image": "images/coaching-session.jpg",
+    "status": "completed",
+    "categories": [],
+    "results": {},
+    "gallery": ["images/coaching-session.jpg"]
+  },
+  {
+    "id": "ttc-open-2027",
+    "title": "Tinsukia Open 2027",
+    "type": "tournament",
+    "date": "2027-03-14",
+    "end_date": "2027-03-16",
+    "location": "Tinsukia Tennis Club",
+    "description": "The second edition of the Tinsukia Open. Building on the success of 2026, this tournament will feature expanded categories and welcome even more players from across the Northeast.",
+    "image": "images/tournament-match.jpg",
+    "status": "upcoming",
+    "categories": ["Men's Singles", "Women's Singles", "Men's Doubles", "Mixed Doubles"],
+    "results": {},
+    "gallery": []
+  },
+  {
+    "id": "winter-camp-2026",
+    "title": "Winter Tennis Camp 2026",
+    "type": "camp",
+    "date": "2026-12-20",
+    "end_date": "2026-12-28",
+    "location": "Tinsukia Tennis Club",
+    "description": "An intensive winter camp for players looking to improve during the off-season. Focus on technical refinement, tactical development and competitive preparation for the new year.",
+    "image": "images/hero-court.jpg",
+    "status": "upcoming",
+    "categories": [],
+    "results": {},
+    "gallery": []
+  }
+]

@@ -1,0 +1,243 @@
+[
+  {
+    "id": "Pratham Mazumdar",
+    "name": "Pratham Mazumdar",
+    "category": "Men's Singles",
+    "age_group": "Senior",
+    "role": "player",
+    "bio": "A consistent and determined competitor, Arjun has been one of Tinsukia Tennis Club's standout players since joining in 2022. Known for his powerful baseline game and mental resilience in pressure situations, he has represented the club at multiple district and state-level tournaments across Assam.",
+    "photo": "images/players/default-male.jpg",
+    "achievements": [
+      { "title": "Winner — Tinsukia Open 2026", "event_id": "tinsukia-open-2026", "year": 2026 },
+      { "title": "Semi-finalist — Assam State Championship", "event_id": null, "year": 2025 },
+      { "title": "Runner-up — Upper Assam District Championship", "event_id": null, "year": 2025 }
+    ],
+    "member_since": "2022",
+    "featured": true
+  },
+  {
+    "id": "rahul-sharma",
+    "name": "Rahul Sharma",
+    "category": "Men's Singles",
+    "age_group": "Senior",
+    "role": "player",
+    "bio": "Rahul brings an aggressive, attacking style to the court. A natural competitor with excellent net play, he has been a key member of the club's tournament squad and a familiar face at local and regional events throughout Upper Assam.",
+    "photo": "images/players/default-male.jpg",
+    "achievements": [
+      { "title": "Runner-up — Tinsukia Open 2026", "event_id": "tinsukia-open-2026", "year": 2026 },
+      { "title": "Winner — TTC Club Championship 2025", "event_id": "ttc-club-championship-2025", "year": 2025 }
+    ],
+    "member_since": "2021",
+    "featured": true
+  },
+  {
+    "id": "priya-borah",
+    "name": "Priya Borah",
+    "category": "Women's Singles",
+    "age_group": "Senior",
+    "role": "player",
+    "bio": "Priya is a technically gifted player whose smooth groundstrokes and tactical intelligence have made her one of the club's most exciting talents. She is passionate about growing women's tennis participation in Upper Assam and mentors junior girls at the club.",
+    "photo": "images/players/default-female.jpg",
+    "achievements": [
+      { "title": "Winner — TTC Women's Championship 2026", "event_id": "ttc-womens-championship-2026", "year": 2026 },
+      { "title": "Quarter-finalist — Northeast Regional Open", "event_id": null, "year": 2025 }
+    ],
+    "member_since": "2023",
+    "featured": true
+  },
+  {
+    "id": "deep-gogoi",
+    "name": "Deep Gogoi",
+    "category": "Men's Singles",
+    "age_group": "Junior",
+    "role": "player",
+    "bio": "At just 16, Deep is already one of the most promising junior players in Assam. Trained at Tinsukia Tennis Club since the age of 12, his rapid development showcases what dedicated coaching and competitive opportunities can achieve at the grassroots level.",
+    "photo": "images/players/default-male.jpg",
+    "achievements": [
+      { "title": "Winner — TTC Junior Championship 2026", "event_id": "ttc-junior-championship-2026", "year": 2026 },
+      { "title": "Runner-up — Assam U-16 State Championship", "event_id": null, "year": 2025 },
+      { "title": "Participant — National Sub-Junior Championship", "event_id": null, "year": 2025 }
+    ],
+    "member_since": "2022",
+    "featured": true
+  },
+  {
+    "id": "ananya-hazarika",
+    "name": "Ananya Hazarika",
+    "category": "Women's Singles",
+    "age_group": "Junior",
+    "role": "player",
+    "bio": "A fearless young competitor with a natural talent for the game. Ananya's determination and work ethic on the training court have translated into impressive results in junior tournaments. She represents the exciting future of tennis at TTC.",
+    "photo": "images/players/default-female.jpg",
+    "achievements": [
+      { "title": "Winner — TTC Girls U-14 Championship 2026", "event_id": null, "year": 2026 },
+      { "title": "Semi-finalist — Assam U-14 State Championship", "event_id": null, "year": 2025 }
+    ],
+    "member_since": "2023",
+    "featured": true
+  },
+  {
+    "id": "vikram-patel",
+    "name": "Vikram Patel",
+    "category": "Men's Doubles",
+    "age_group": "Senior",
+    "role": "player",
+    "bio": "A doubles specialist known for his quick reflexes at the net and excellent court coverage. Vikram has formed several successful partnerships at the club and is a popular figure in the TTC community, always encouraging newer players to take up the doubles format.",
+    "photo": "images/players/default-male.jpg",
+    "achievements": [
+      { "title": "3rd Place — Tinsukia Open 2026 (Singles)", "event_id": "tinsukia-open-2026", "year": 2026 },
+      { "title": "Winner — TTC Doubles Championship 2025", "event_id": null, "year": 2025 }
+    ],
+    "member_since": "2020",
+    "featured": false
+  },
+  {
+    "id": "nabajit-saikia",
+    "name": "Nabajit Saikia",
+    "category": "Men's Singles",
+    "age_group": "Senior",
+    "role": "coach",
+    "bio": "Coach Nabajit has been instrumental in building the coaching structure at Tinsukia Tennis Club. With years of playing and coaching experience, he brings technical expertise and a genuine passion for developing players of all ages and levels.",
+    "photo": "images/players/default-male.jpg",
+    "achievements": [
+      { "title": "Head Coach — Tinsukia Tennis Club", "event_id": null, "year": 2021 },
+      { "title": "Coached 5+ district-level champions", "event_id": null, "year": 2025 }
+    ],
+    "member_since": "2020",
+    "featured": true
+  },
+  {
+    "id": "ritu-devi",
+    "name": "Ritu Devi",
+    "category": "Women's Singles",
+    "age_group": "Senior",
+    "role": "player",
+    "bio": "A dedicated recreational player and one of the founding members of the club's women's tennis group. Ritu has been instrumental in encouraging more women to take up tennis in Tinsukia and actively organises social tennis events at the club.",
+    "photo": "images/players/default-female.jpg",
+    "achievements": [
+      { "title": "Founding Member — TTC Women's Tennis Group", "event_id": null, "year": 2023 }
+    ],
+    "member_since": "2021",
+    "featured": false
+  },
+  {
+    "id": "dr-jc-dey",
+    "name": "Dr. JC Dey",
+    "category": "President",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 1
+  },
+  {
+    "id": "bivek-sharma",
+    "name": "Bivek Sharma",
+    "category": "Secretary",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 2
+  },
+  {
+    "id": "a-mahanta",
+    "name": "A Mahanta",
+    "category": "Treasurer",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 3
+  },
+  {
+    "id": "bhaskar-dutta",
+    "name": "Bhaskar Dutta",
+    "category": "Legal Advisor",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 4
+  },
+  {
+    "id": "poona-gogoi",
+    "name": "Poona Gogoi",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 5
+  },
+  {
+    "id": "rajeev-handique",
+    "name": "Rajeev Handique",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 6
+  },
+  {
+    "id": "kaushik-medhi",
+    "name": "Kaushik Medhi",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 7
+  },
+  {
+    "id": "gurujeet-bharadwaj",
+    "name": "Gurujeet Bharadwaj",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 8
+  },
+  {
+    "id": "sandeep-sharma",
+    "name": "Sandeep Sharma",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 9
+  },
+  {
+    "id": "archana-sharma",
+    "name": "Archana Sharma",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-female.jpg",
+    "order": 10
+  },
+  {
+    "id": "debobrata-dohotia",
+    "name": "Debobrata Dohotia",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 11
+  },
+  {
+    "id": "rommie-hatikakoti",
+    "name": "Rommie Hatikakoti",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 12
+  },
+  {
+    "id": "rana-neog",
+    "name": "Rana Neog",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 13
+  },
+  {
+    "id": "amit-gupta",
+    "name": "Amit Gupta",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-male.jpg",
+    "order": 14
+  },
+  {
+    "id": "rinni-sharma",
+    "name": "Mrs Rinni Sharma",
+    "category": "Executive Member",
+    "role": "committee",
+    "photo": "images/players/default-female.jpg",
+    "order": 15
+  }
+]
